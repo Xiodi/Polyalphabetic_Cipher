@@ -20,6 +20,6 @@ while (defined(my $text = <$sourceFile>))
 	$keychar = abs(ord($keytab[$i % @keytab]) - 65) % 26;
 	$keychar = -$keychar if ($ARGV[0] == 2);
 	print(poly($_, $keychar));
-	$i++;
+	++$i;
     }
 }
